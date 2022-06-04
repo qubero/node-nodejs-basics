@@ -8,7 +8,7 @@ export const transform = async () => {
 
     const ts = new Transform({
       transform(chunk, _, cb) {
-        cb(null, String(chunk).split('').reverse().join(''));
+        cb(null, String(chunk).split('').reverse().join('') + '\n\n');
       },
     });
 
