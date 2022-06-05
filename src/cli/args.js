@@ -1,6 +1,6 @@
 export const parseArgs = () => {
   try {
-    const processArgs = process.argv;
+    const processArgs = process.argv.slice(2);
     const prefix = '--';
     const argVars = [];
 
